@@ -37,9 +37,16 @@ const opzioni = {
             }
         },
          indietro() {
-            let finalindex = this.slides.length-1;
-             this.index--;
-        },
+            if(this.index == 0){
+                    let finalindex = this.slides.length-1;
+                    this.index=finalindex;
+                }
+            else{
+                let finalindex = this.slides.length-1;
+                this.index--;
+
+            }
+            }
     }
 };
 createApp(opzioni).mount('#app')

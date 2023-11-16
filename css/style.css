@@ -1,0 +1,15 @@
+*{color: white;}
+body{background: black;}
+
+button{color: black;}
+
+.card{
+    width: 400px;
+    height: 400px;
+
+};
+
+#immagine{
+    width: 400px;
+    height: 400px;
+};

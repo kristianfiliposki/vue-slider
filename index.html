@@ -10,9 +10,11 @@
 <body>
     <div id="app">
         <div class="card">
-            <h1>{{slides[index].titolo}}</h1>
-            <img :src=slides[index].immagine alt="">
-            <p>{{slides[index].testo}}</p>
+            <h1>{{slides[index].nome}}</h1>
+            <img :src="slides[index].immagine" alt="" id="immagine" style="height: 100%;">
+            <p>{{slides[index].descrizione}}</p>
+            <p>{{slides[index].prezzo}} €</p>
+
         </div>
         <button @click="avanti()">avanti</button>
         <button @click="indietro()">indietro</button>
