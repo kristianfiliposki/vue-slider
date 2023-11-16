@@ -9,10 +9,14 @@
 </head>
 <body>
     <div id="app">
-
-        <div>{{ message }}</div>
-<!--         <button @click="prova">prova</button>
- -->        <button @click="bottoneCliccato">Cliccami</button>
+        <div class="card">
+            <h1>{{slides[index].titolo}}</h1>
+            <img :src=slides[index].immagine alt="">
+            <p>{{slides[index].testo}}</p>
+        </div>
+        <button @click="avanti()">avanti</button>
+        <button @click="indietro()">indietro</button>
+        <div>{{index}}</div>
     </div>
 
     <script src="./java/main.js"></script>
